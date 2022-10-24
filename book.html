@@ -6,8 +6,29 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Bordreservasjon</h1>
     <form action="">
-        
-    </form>
+        <label>Antall gjester:</label>
+        <input type="range" min="0" max="10" value="1" oninput="rangeValue.innerText = this.value"> <span id="rangeValue">1</span>
+        <br> <br>
+        <p><b>Hvilke retter ønsker du?</b></p>
+        <input type="checkbox" name="retter" value="forrett" id=""> Forrett<br>
+        <input type="checkbox" name="retter" value="hovedrett" id=""> Hovedrett<br>
+        <input type="checkbox" name="retter" value="dessert" id=""> Dessert<br>
+        <br>
+        <label for="">Dato:</label>
+        <input type="date" name="" id="">
+        <label for=""> Klokkeslett:</label>
+        <select name="" id="">
+            <option value="">17:00</option>
+            <option value="">18:00</option>
+            <option value="">19:00</option>
+            <option value="">20:00</option>
+            <option value="">21:00</option>
+        </select>
+        <br> <br>
+        <button type="submit">SEND</button>
+    </form> 
+    
 </body>
 </html>
